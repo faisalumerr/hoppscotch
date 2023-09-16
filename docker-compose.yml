@@ -21,7 +21,7 @@ services:
     volumes:
       # Uncomment the line below when modifying code. Only applicable when using the "dev" target.
       - ./packages/hoppscotch-backend/:/usr/src/app
-      - /usr/src/app/node_modules/
+      - /usr/src/app/node_modules/:/usr/src/app/node_modules/
     depends_on:
       hoppscotch-db:
         condition: service_healthy
@@ -118,7 +118,7 @@ services:
     volumes:
       # Uncomment the line below when modifying code. Only applicable when using the "dev" target.
       - ./packages/hoppscotch-backend/:/usr/src/app
-      - /usr/src/app/node_modules/
+      - /usr/src/app/node_modules/:/usr/src/app/node_modules/
     depends_on:
       hoppscotch-db:
         condition: service_healthy
